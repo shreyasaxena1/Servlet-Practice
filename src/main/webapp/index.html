@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-   <form action="add" method ="post"> <!-- by default get method
-   values goes to url, so we can use post - data passing not use url -->
+   <form action="add" method ="get">   
+   <!-- by default get method : values goes to url, so we can use post - data passing not use url -->
    
    
    <!-- here we are mentioning add but class that needs to be call is AddServlets.java (servlets)
@@ -15,3 +15,16 @@
    </form>
 </body>
 </html>
+
+
+
+
+
+<!--  Fetch data from server : Get  , Submit data to server : Post -->
+
+
+
+<!--    Flow
+Click on submit button - check what type of data passing (sending post req) - goes to web.xml searching for url /add -- goes to its servlet -- call service method 
+
+ -->

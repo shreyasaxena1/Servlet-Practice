@@ -14,4 +14,13 @@
 		<servlet-name>for</servlet-name> <!-- same as servlet -->
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>square</servlet-name> <!-- there are many servlets present so we need name for mapping with specific -->
+		<servlet-class>pservlets.SqServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>square</servlet-name> <!-- same as servlet -->
+		<url-pattern>/sq</url-pattern>
+	</servlet-mapping>
 </web-app>
