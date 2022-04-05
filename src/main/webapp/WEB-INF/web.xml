@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
-<!-- for each servlet we need to write servlet and servlet-mapping tags -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<!-- for each servlet we need to write servlet and servlet-mapping tags -->
 
-<servlet>
-    <servlet-name>for</servlet-name> <!-- there are many servlets present so we need name for mapping with specific -->
-    <servlet-class>pservlets.AddServlet</servlet-class>
-    
-</servlet>
-<servlet-mapping>
-    <servlet-name>for</servlet-name> <!--  same as servlet -->
-    <url-pattern>add</url-pattern>
-</servlet-mapping>
+	<servlet>
+		<servlet-name>for</servlet-name> <!-- there are many servlets present so we need name for mapping with specific -->
+		<servlet-class>pservlets.AddServlet</servlet-class>
 
-
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>for</servlet-name> <!-- same as servlet -->
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
 </web-app>
